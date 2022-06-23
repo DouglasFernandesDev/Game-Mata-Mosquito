@@ -43,7 +43,7 @@ const posicaoRandom = () => {
     if(vidas > 3){
       window.location.href = 'gameover.html';
     } else {
-      document.getElementById(`v${vidas}`).src="../../assets/images/coracao_vazio.png";
+      document.getElementById(`v${vidas}`).src="../assets/images/coracao_vazio.png";
       vidas++;
   }
 }
@@ -54,7 +54,7 @@ const posicaoRandom = () => {
   posicaoY = posicaoY < 0 ? 0 : posicaoY;
   
   const mosquito = document.createElement('img');
-  mosquito.src = '../../assets/images/mosca.png';
+  mosquito.src = '../assets/images/mosca.png';
   mosquito.className = tamanhoAleat() + ' ' + ladoAleat();
   mosquito.style.left = posicaoX + 'px';
   mosquito.style.top = posicaoY + 'px';
