@@ -1,7 +1,7 @@
 let largura = 0;
 let altura = 0;
 let vidas = 1;
-let tempo = 15;
+let tempo = 20;
 let dificuldade = 1500;
 
 let nivel = window.location.search
