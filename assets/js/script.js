@@ -2,6 +2,19 @@ let largura = 0;
 let altura = 0;
 let vidas = 1;
 let tempo = 15;
+let dificuldade = 1500;
+
+let nivel = window.location.search
+nivel = nivel.replace('?', '');
+
+if(nivel === 'normal'){
+  dificuldade = 1500;
+} else if(nivel === 'dificil') {
+  dificuldade = 1000;
+} else if(nivel === 'chucknorris') {
+  dificuldade = 750;
+} 
+
 const ajustaTamaho = () => {
   largura = window.innerWidth;
   altura = window.innerHeight;
